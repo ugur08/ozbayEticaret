@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- font -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Özbay İletişim</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">ÖZBAY İLETİSİM</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Anasayfa</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="urunler.html">Ürünlerimiz</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="iletisim.html">İletişim</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-warning nav-link active" href="sepet.html"
+                  ><i class="fa fa-shopping-cart me-1"></i>
+                  <span class="badge bg-dark rounded-pill">19</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- carousel -->
+
+    <div class="container mt-2">
+      <div class="row">
+        <div class="col-3 order-2">
+          <div class="list-group text-center shadow-lg">
+            <button
+              type="button"
+              class="list-group-item list-group-item-action active"
+              aria-current="true"
+            >
+              Kategoriler
+            </button>
+            <button
+              type="button"
+              class="list-group-item list-group-item-action d-flex justify-content-between dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Araç Aksesuarları
+              <span class="badge bg-primary rounded-pill">19</span>
+            </button>
+            <ul class="dropdown-menu bg-light">
+              <li><a class="dropdown-item" href="#">Apple</a></li>
+              <li><a class="dropdown-item" href="#">Samsung</a></li>
+              <li><a class="dropdown-item" href="#">Xioami</a></li>
+            </ul>
+            <button
+              type="button"
+              class="list-group-item list-group-item-action d-flex justify-content-between"
+            >
+              Telefon Kılıfları
+              <span class="badge bg-primary rounded-pill">25</span>
+            </button>
+            <button
+              type="button"
+              class="list-group-item list-group-item-action d-flex justify-content-between"
+            >
+              Tablet Kılıfları
+              <span class="badge bg-primary rounded-pill">10</span>
+            </button>
+            <button
+              type="button"
+              class="list-group-item list-group-item-action d-flex justify-content-between"
+            >
+              Ekran Koruyucular
+              <span class="badge bg-primary rounded-pill">11</span>
+            </button>
+            <button
+              type="button"
+              class="list-group-item list-group-item-action d-flex justify-content-between"
+            >
+              Giyilebilir Aksesuarlar
+              <span class="badge bg-primary rounded-pill">18</span>
+            </button>
+            <button
+              type="button"
+              class="list-group-item list-group-item-action d-flex justify-content-between"
+            >
+              Oyun Aksesuarları
+              <span class="badge bg-primary rounded-pill">8</span>
+            </button>
+            <button
+              type="button"
+              class="list-group-item list-group-item-action d-flex justify-content-between"
+            >
+              Selfie Ve Standlar
+              <span class="badge bg-primary rounded-pill">4</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-9">
+          <div
+            id="carouselExampleDark"
+            class="carousel carousel-dark slide shadow-lg img-thumbnail"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="img/carousel-1.png" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>
+                    Some representative placeholder content for the first slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="img/carousel-2.png" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>
+                    Some representative placeholder content for the second
+                    slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/carousel-3.png" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>
+                    Some representative placeholder content for the third slide.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- carousel end -->
+    <!-- kayan yazı -->
+    <div class="container mt-5 mb-5 border shadow-lg">
+      <marquee direction="right"
+        >ozbayiletisim.com Kampanyalı Ürün Fiyatları ile Kaliteden Ödün vermeden
+        Sizlerin Hizmetinizdeyiz.</marquee
+      >
+    </div>
+    <!-- kayan yazı end -->
+    <!-- hizmetler  -->
+    <div class="container text-center mt-3 shadow-lg">
+      <div class="row">
+        <div class="col-12 mb-3 mt-3" id="#hizmetlerimiz">
+          <h2>Hizmetlerimiz</h2>
+        </div>
+        <div class="col-lg-4 border-end">
+          <a href="aksesuar.html">
+            <img
+              src="https://img.joomcdn.net/568b70791c2a4d8f9a3874b3f89634492a087d23_original.jpeg"
+              style="width: 200px; height: 200px"
+              alt=""
+              class="img-thumbnail rounded-circle"
+            />
+          </a>
+
+          <h2>Cep Telefonu Aksesuarlar</h2>
+          <p>
+            Her Yaşa hitap edebilen çeşitli ürün yelpazemiz ile siz değerli
+            müşterilerimize hizmet vermekteyiz.
+          </p>
+          <p><a class="btn btn-warning" href="aksesuar.html">Detaylar</a></p>
+        </div>
+        <div class="col-lg-4 border-end">
+          <a href="cep-tamir.html">
+            <img
+              class="img-thumbnail rounded-circle"
+              src="https://cdn.armut.com/images/services/mobile/00138-cep-telefonu-tamiri.jpg?v=1662705328074"
+              style="width: 220px; height: 220px"
+              alt=""
+          /></a>
+
+          <h2>Cep Telefon Tamir</h2>
+          <p>
+            Profosyonel Teknin servis çözümleri ile Ekran,Batarya,Şarj Soketi
+            gibi Teknik Konularda profosyonel çözümler için sizleri şubemize
+            veya iletişim kanallarımıza davet ediyoruz.
+          </p>
+          <p><a class="btn btn-warning" href="cep-tamir.html">Detaylar</a></p>
+        </div>
+        <div class="col-lg-4">
+          <a href="turktelekom.html">
+            <img
+              src="data:image/jpeg;base64,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"
+              style="width: 200; height: 200px"
+              class="img-thumbnail rounded-circle"
+              alt=""
+            />
+          </a>
+          <h2>Türk Telekom Hat İşlemleri</h2>
+          <p>
+            Türk Telekom Yeni Hat Geçiş gibi Konularda da profosyonel desteğimiz
+            mevcuttur. Bu gibi işlemler için şubemize bekliyoruz.
+          </p>
+          <p><a class="btn btn-warning" href="turktelekom.html">Detaylar</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- hizmetler end -->
+    <!-- ürünler -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12 shadow-lg mt-5 mb-5">
+          <h2 class="text-center mt-3">En Çok Satan Ürünlerimiz</h2>
+        </div>
+        <div class="col-3" id="ugur">
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <a href="#" class="btn btn-outline-primary btn-icon float-end">
+                <i class="fa fa-heart"></i>
+              </a>
+              <a href="urun-detay.html">
+                <img
+                  src="https://productimages.hepsiburada.net/s/29/375/10261355823154.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </a>
+              <a href="urun-detay.html">
+                <h5 class="card-title">Syrox 3.1 Sarj Aleti</h5>
+              </a>
+              <div class="rating mb-2">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="text-warning ms-1">5.0</span>
+              </div>
+              <p class="text-muted">Stok:</p>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <div class="price-wrap mb-4 text-center">
+                <strong class="price">12.500 TL</strong>
+                <del class="price-old">13.000 TL</del>
+              </div>
+              <div class="d-grid ga-2 d-md-block">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <i class="fa fa-shopping-cart me-1"></i> Sepete Ekle
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal1"
+                >
+                  <i class="fa fa-shopping-cart me-1"></i>Listeye Ekle
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3" id="ugur">
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <a href="#" class="btn btn-outline-primary btn-icon float-end">
+                <i class="fa fa-heart"></i>
+              </a>
+              <a href="urun-detay.html">
+                <img
+                  src="https://productimages.hepsiburada.net/s/76/500/110000018442037.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <h5 class="card-title">İphone 13 Pro Max Kılıf</h5>
+              </a>
+              <div class="rating mb-2">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="text-warning ms-1">5.0</span>
+              </div>
+              <p class="text-muted">Stok:</p>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <div class="price-wrap mb-4 text-center">
+                <strong class="price">12.500 TL</strong>
+                <del class="price-old">13.000 TL</del>
+              </div>
+              <div class="d-grid ga-2 d-md-block">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <i class="fa fa-shopping-cart me-1"></i> Sepete Ekle
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal1"
+                >
+                  <i class="fa fa-shopping-cart me-1"></i>Listeye Ekle
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3" id="ugur">
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <a href="#" class="btn btn-outline-primary btn-icon float-end">
+                <i class="fa fa-heart"></i>
+              </a>
+              <a href="urun-detay.html">
+                <img
+                  src="http://cdn.cimri.io/image/240x240/cepsuar-tyc001591995142147-airpods-i12-beyaz-bluetooth-kulaklik-tum-telefonlar-ile-uyumlu_528669142.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </a>
+              <a href="urun-detay.html">
+                <h5 class="card-title">Apple Airpods 2.Nesil</h5>
+              </a>
+              <div class="rating mb-2">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="text-warning ms-1">5.0</span>
+              </div>
+              <p class="text-muted">Stok:</p>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <div class="price-wrap mb-4 text-center">
+                <strong class="price">12.500 TL</strong>
+                <del class="price-old">13.000 TL</del>
+              </div>
+              <div class="d-grid ga-2 d-md-block">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <i class="fa fa-shopping-cart me-1"></i> Sepete Ekle
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal1"
+                >
+                  <i class="fa fa-shopping-cart me-1"></i>Listeye Ekle
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3" id="ugur">
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <a href="#" class="btn btn-outline-primary btn-icon float-end">
+                <i class="fa fa-heart"></i>
+              </a>
+              <a href="urun-detay.html">
+                <img
+                  src="https://cdn.cimri.io/image/1000x1000/samsungmahgmtanabilirarjcihazpowerbank_470859585.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </a>
+              <a href="urun-detay.html">
+                <h5 class="card-title">Samsung 10.000 Powerbank</h5>
+              </a>
+              <div class="rating mb-2">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="text-warning ms-1">5.0</span>
+              </div>
+              <p class="text-muted">Stok:</p>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <div class="price-wrap mb-4 text-center">
+                <strong class="price">12.500 TL</strong>
+                <del class="price-old">13.000 TL</del>
+              </div>
+              <div class="d-grid ga-2 d-md-block">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <i class="fa fa-shopping-cart me-1"></i> Sepete Ekle
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal1"
+                >
+                  <i class="fa fa-shopping-cart me-1"></i>Listeye Ekle
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <a href="#" class="btn btn-outline-secondary float-end mt-1 me-3"
+            >Tümünü Görmek İçin</a
+          >
+        </div>
+        <div class="col-12 mb-3 mt-3 shadow-lg">
+          <h2 class="text-center mt-3">En Popüler Ürünlerimiz</h2>
+        </div>
+        <div class="col-12">
+          <div class="container">
+            <img src="img/crs-1.png" class="w-100" alt="" />
+          </div>
+        </div>
+        <div class="col-2 mt-3" id="ugur">
+          <div class="card shadow" style="width: 13rem">
+            <div class="card-body">
+              <a href="#" class="btn btn-outline-primary btn-icon float-end">
+                <i class="fa fa-heart"></i>
+              </a>
+              <img
+                src="https://n11scdn.akamaized.net/a1/org/elektronik/tasinabilir-sarj-cihazi/xiaomi-1000-mah-powerbank__1413180790021630.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+
+              <h6 class="card-title">Samsung 10mah Power</h6>
+              <div class="rating mb-2">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="text-warning ms-1">5.0</span>
+              </div>
+              <p class="text-muted">Stok:</p>
+              <p class="fs-6">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <div class="price-wrap mb-4 text-center">
+                <strong class="price">12.500 TL</strong>
+                <del class="price-old">13.000 TL</del>
+              </div>
+
+              <div class="d-grid ga-2 d-md-block text-center">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-sm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <i class="fa fa-shopping-cart me-1"></i> Sepete Ekle
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-primary btn-sm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal1"
+                >
+                  <i class="fa fa-shopping-cart me-1"></i>Listeye Ekle
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 mt-3" id="ugur">
+          <div class="card shadow" style="width: 13rem">
+            <div class="card-body">
+              <a href="#" class="btn btn-outline-primary btn-icon float-end">
+                <i class="fa fa-heart"></i>
+              </a>
+              <img
+                src="data:image/jpeg;base64,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"
+                class="card-img-top"
+                alt="..."
+              />
+              <h6 class="card-title">Philips Bluetooth Kulaklık</h6>
+              <div class="rating mb-2">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="text-warning ms-1">5.0</span>
+              </div>
+              <p class="text-muted">Stok:</p>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <div class="price-wrap mb-4 text-center">
+                <strong class="price">12.500 TL</strong>
+                <del class="price-old">13.000 TL</del>
+              </div>
+              <div class="d-grid ga-2 d-md-block text-center">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-sm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <i class="fa fa-shopping-cart me-1"></i> Sepete Ekle
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-primary btn-sm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal1"
+                >
+                  <i class="fa fa-shopping-cart me-1"></i>Listeye Ekle
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 mt-3" id="ugur">
+          <div class="card shadow" style="width: 13rem">
+            <div class="card-body">
+              <a href="#" class="btn btn-outline-primary btn-icon float-end">
+                <i class="fa fa-heart"></i>
+              </a>
+              <img
+                src="http://www.joyroom.com.tr/Uploads/UrunResimleri/buyuk/joyroom-jr-bp375-iphone-x-iphone-xs-kili-b19c.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <h6 class="card-title">iphone X Lüks Kılıf</h6>
+              <div class="rating mb-2">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="text-warning ms-1">5.0</span>
+              </div>
+              <p class="text-muted">Stok:</p>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <div class="price-wrap mb-4 text-center">
+                <strong class="price">12.500 TL</strong>
+                <del class="price-old">13.000 TL</del>
+              </div>
+              <div class="d-grid ga-2 d-md-block text-center">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-sm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <i class="fa fa-shopping-cart me-1"></i> Sepete Ekle
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-primary btn-sm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal1"
+                >
+                  <i class="fa fa-shopping-cart me-1"></i>Listeye Ekle
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 mt-3" id="ugur">
+          <div class="card shadow" style="width: 13rem">
+            <div class="card-body">
+              <a href="#" class="btn btn-outline-primary btn-icon float-end">
+                <i class="fa fa-heart"></i>
+              </a>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2yeQ3dj9CbclKq25L3gck4l8KIFmU_ZYckQ&usqp=CAU"
+                class="card-img-top"
+                alt="..."
+              />
+              <h6 class="card-title">Arbaks 2.1 Şarj Aleti</h6>
+              <div class="rating mb-2">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="text-warning ms-1">5.0</span>
+              </div>
+              <p class="text-muted">Stok:</p>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <div class="price-wrap mb-4 text-center">
+                <strong class="price">12.500 TL</strong>
+                <del class="price-old">13.000 TL</del>
+              </div>
+              <div class="d-grid ga-2 d-md-block text-center">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-sm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <i class="fa fa-shopping-cart me-1"></i> Sepete Ekle
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-primary btn-sm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal1"
+                >
+                  <i class="fa fa-shopping-cart me-1"></i>Listeye Ekle
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 mt-3" id="ugur">
+          <div class="card shadow" style="width: 13rem">
+            <div class="card-body">
+              <a href="#" class="btn btn-outline-primary btn-icon float-end">
+                <i class="fa fa-heart"></i>
+              </a>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2yeQ3dj9CbclKq25L3gck4l8KIFmU_ZYckQ&usqp=CAU"
+                class="card-img-top"
+                alt="..."
+              />
+              <h6 class="card-title">Arbaks 2.1 Şarj Aleti</h6>
+              <div class="rating mb-2">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="text-warning ms-1">5.0</span>
+              </div>
+              <p class="text-muted">Stok:</p>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <div class="price-wrap mb-4 text-center">
+                <strong class="price">12.500 TL</strong>
+                <del class="price-old">13.000 TL</del>
+              </div>
+              <div class="d-grid ga-2 d-md-block text-center">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-sm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <i class="fa fa-shopping-cart me-1"></i> Sepete Ekle
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-primary btn-sm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal1"
+                >
+                  <i class="fa fa-shopping-cart me-1"></i>Listeye Ekle
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 mt-3" id="ugur">
+          <div class="card shadow" style="width: 13rem">
+            <div class="card-body">
+              <a href="#" class="btn btn-outline-primary btn-icon float-end">
+                <i class="fa fa-heart"></i>
+              </a>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2yeQ3dj9CbclKq25L3gck4l8KIFmU_ZYckQ&usqp=CAU"
+                class="card-img-top"
+                alt="..."
+              />
+              <h6 class="card-title">Arbaks 2.1 Şarj Aleti</h6>
+              <div class="rating mb-2">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="text-warning ms-1">5.0</span>
+              </div>
+              <p class="text-muted">Stok:</p>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <div class="price-wrap mb-4 text-center">
+                <strong class="price">12.500 TL</strong>
+                <del class="price-old">13.000 TL</del>
+              </div>
+              <div class="d-grid ga-2 d-md-block text-center">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-sm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <i class="fa fa-shopping-cart me-1"></i> Sepete Ekle
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-primary btn-sm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal1"
+                >
+                  <i class="fa fa-shopping-cart me-1"></i>Listeye Ekle
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <a href="#" class="btn btn-outline-secondary float-end mt-1 me-3"
+          >Tümünü Görmek İçin</a
+        >
+      </div>
+    </div>
+    <!-- Button trigger modal -->
+
+    <!-- Modal Sepete Ekle-->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal sepete ekle finiş -->
+    <!-- Modal Listeye Ekle-->
+    <div
+      class="modal fade"
+      id="exampleModal1"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal titleasdas</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">
+              <i class="fa fa-shopping-cart me-1"></i>Save changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal Listeye ekle finiş -->
+    <footer>
+      <div class="w-100 bg-primary p-3 mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-5">
+              <a class="navbar-brand text-white" href="#">ÖZBAY İLETİSİM</a>
+            </div>
+            <div class="col-6">
+              <h5 class="text-white">Copryting @2025 Tüm Hakları Saklıdır</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
